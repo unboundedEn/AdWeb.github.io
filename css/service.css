@@ -1,0 +1,599 @@
+body{
+    color: white;
+}
+
+.menu{
+    text-align: center;
+    font-size: large;
+}
+
+.menu h3 a{
+    color: rgb(255, 194, 82);
+}
+.loas-price a{
+    color: azure;
+}
+
+.menu h3 a:hover, .price a:hover, .loas-price a:hover{
+    color: lightsalmon;
+}
+
+.fixed {
+    position: fixed;
+    top: 35%;
+    left: 0;
+    text-align: center;
+    background-color: rgb(0, 0, 0, .5);
+    font-size: x-small;
+    border: 2px solid black;
+    z-index: 100;
+    border-radius: 10px;
+    width: 8%;
+}
+.fixed1{
+    position: fixed;
+    top: 35%;
+    right: 0;
+    text-align: center;
+    background-color: rgb(0, 0, 0, .5);
+    font-size: x-small;
+    border: 2px solid black;
+    z-index: 100;
+    border-radius: 10px;
+    width: 8%;
+}
+
+.fixed a{
+    margin: 10px 0px;
+    color: white;
+    line-height: 1.5;
+}
+
+.fixed a:hover{
+    border-bottom: 2px solid;
+}
+.big{
+    opacity: 1;
+}
+.small{
+    opacity: 0;
+}
+
+
+
+.title{
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.card h3{
+    background-color: rgb(44, 44, 44);
+    float: left;
+    border-radius: 10px;
+    position: absolute;
+    top: -8px;
+    left: -10px;
+    margin: 0;
+}
+
+.car, .tour {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+}
+
+#car h2 ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide-container, .slide-container > *{
+    box-sizing: border-box;
+}
+
+.slide-container{
+    margin: 5% auto;
+    width: 648px;
+    height: 648px;
+    position: relative;
+}
+
+.slide-container .slide .item{
+    width: 180px;
+    height: 200px;
+    position: absolute;
+    top: 65%;
+    transform: translate(70%, 50%);
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px #a3a3a3; /*#594242;*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    transition: .5s;
+}
+
+.slide .item:nth-child(1),
+.slide .item:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0,0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide .item:nth-child(3){
+    left: 50%
+}
+.slide .item:nth-child(4){
+    left: calc(50% + 200px);
+}
+.slide .item:nth-child(n+5){
+    left: calc(50% + 400px);
+}
+
+
+.item .content{
+    position: absolute;
+    top: 40%;
+    left: 50px;
+    display: none;
+}
+
+.slide .item:nth-child(2) .content{
+    display: block;
+}
+
+.content .name{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow:black 2px 2px 10px;
+    opacity: 0;
+    animation: showup .6s ease-in-out 1 forwards;
+}
+.content p{
+    text-align: left; 
+    font-size: xx-large;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px black;
+}
+
+@keyframes showup {
+    from{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+.button{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.button button{
+    width: 40px;
+    height: 35px;
+    margin: 0 10px;
+    border-radius: 8px;
+    border: none;
+    cursor:pointer;
+}
+
+.button button:hover{
+    background: gray;
+    color: white;
+}
+
+.third{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    background-color: rgb(255, 243, 220);
+}
+
+.one-third{
+    flex: 1 0 33%;
+    background-color: rgb(104, 181, 249);
+}
+.two-third{
+    flex: 2 0 66%;
+    background-color: rgb(14, 190, 190);
+}
+.right-side{
+    flex: 1;
+    text-shadow: 1px 1px 5px white;
+}
+
+.right-side ul li{
+    display: list-item;
+    color:black
+}
+
+ul li{
+    list-style: none;
+}
+
+.after1, .after2, .before{
+    margin: auto auto;
+    text-align: left;
+    font-size: 17px;
+}
+
+.visa-sim{
+    flex: 1;
+}
+
+.txt {
+    background-color: rgb(255, 243, 220);
+}
+.txt-bg{
+    background-color: rgb(203, 182, 143);
+    margin: auto;
+    text-align: center;
+    padding: 1px 5px;
+}
+.bullet ul {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    line-height: 1.8;
+}
+
+.bullet li{
+    margin: 0px 15px;
+}
+
+.loas-plan{
+    background-image: url(../imgs/girls/beauty.webp);
+    width: 55%;
+    margin: auto auto;
+    background-attachment: fixed;
+}
+
+.bgc{
+    background-color: rgb(0, 0, 0, .6);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.price, .loas-price {
+    border-radius: 10px;
+    border: 2px double white;
+    width: 100%;
+    margin: 0 auto;
+}
+.visa{
+    margin: auto 5px;
+    right: 4px;
+}
+
+.loas-price{
+    width: 70%;
+    background: linear-gradient(45deg, rgb(255, 0, 0, .5), rgb(0, 0, 255, .5));
+    border: 10px double white;
+}
+
+.e-visa ul{
+    margin: 0;
+    padding: 0;
+}
+
+.e-visa li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: x-large;
+    padding: 2px;
+    margin: 6px 6px;
+    line-height: 2.5;
+}
+
+.loas-plan li{
+    margin: 6px 6%;
+}
+
+.price h1, .loas-price h1{
+    margin: 20px;
+}
+
+.price h2, .loas-price h2{
+    text-align: center;
+}
+
+.drawline{
+    border-bottom: 2px solid rgb(217, 217, 217);
+    flex-grow: 1;
+    margin: auto 6px;
+}
+
+.bg-color{
+    margin: 0;
+    padding: 120px auto;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(255, 0, 0, .5), rgb(0, 0, 255, .5));
+}
+
+.bg {
+    width: 90%; 
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.visa-sim{
+    background-color: rgb(0, 0, 0, .5);
+}
+.beauty-text{
+    flex: 1 0 50%;
+    background-color: rgb(0, 0, 0, .5);
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-top: 40px;
+    text-shadow: 1px 1px 5px black;
+}
+
+.beauty-text h1{
+    padding-left: 50px;
+}
+.beauty-text p{
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    line-height: 2.5;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    background-color: rgb(163, 163, 163,.7);
+}
+
+.beauty-text table{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.beauty-text a{
+    background-color: wheat;
+    font-weight: bold;
+    color: black;
+    padding: 5px 6px;
+    font-size: large;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.beauty-text a:hover{
+    color: wheat;
+    background-color: black;
+}
+
+#simCard{
+    display: flex;
+    justify-content: space-around;
+}
+.motor{
+    margin: 0 auto;
+    width: 85%;
+}
+.motor h1, .motor h3{
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+}
+.img{
+    flex: 1;
+    text-align: center;
+}
+.img img{
+    height: 450px;
+    padding: 10px;
+    margin: 10px;
+}
+.instruction{
+    width: 80%;
+    margin: 0 auto;
+}
+
+ol li{
+    width: 90%;
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 840px) {
+    .menu h3 a{
+        font-size: medium;
+    }
+    /*
+    .fixed{
+        width: 100%;
+        font-size: small;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        bottom: 0;
+        top: auto;
+        text-shadow: 1px 1px 4px black;
+    }
+    .fixed p{
+        flex: 5 0 100%;
+        text-align: center;
+    }
+
+    .fixed a{
+        flex: 1 0 20%;
+        line-height: 1;
+    }
+    */
+
+    .big{
+        opacity: 0;
+    }
+    .small{
+        opacity: 1;
+        z-index: 700;
+    }
+    .bg{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .card{
+        float: none;
+    }
+
+    .col{
+        text-align: center;
+    }
+
+    P{
+        text-align:left;
+    }
+
+    .intro h1{
+        border: 1px solid black;
+    }
+
+    .slide-container{
+        width: 288px;
+        height: 288px;
+    }
+
+    .slide-container .slide .item{
+        width: 77px;
+        height: 86px;
+        box-shadow: 10px 10px 30px;
+    }
+
+    .slide .item:nth-child(1),
+    .slide .item:nth-child(2){
+    width: 100%;
+    height: 100%;
+    }
+
+    .slide .item:nth-child(3){
+        z-index: 100;
+        left: 50%;
+    }
+
+    .slide .item:nth-child(4){
+        z-index: 99;
+        left: calc(50% + 50px);
+    }
+    .item .content{
+        top: 35%;
+        left: 35px;
+    }
+    .content .name{
+        font-size: 30px;
+    }
+    .content p{
+        font-size: large;
+    }
+    .car, .beauty-text p, .beauty-text{
+        width: 90%;
+    }
+
+    #car h2 ul{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .third{
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;   
+    }
+
+    .third > *{
+        width: 100%;
+        margin: auto;
+    }
+    .one{
+        order: 1;
+    }
+    .before{
+        order: 2;
+    }
+    .two{
+        order: 3;
+    }
+    .after1{
+        order: 4;
+    }
+    .three{
+        order: 5;
+    }
+    .after2{
+        order: 6;
+    }
+ 
+    .loas-plan{
+        width: 95%;
+    }
+
+    .price h2, .loas-price h2{
+        font-size: large;
+    }
+
+    .price ul li, .loas-price ul li{
+        font-size: x-small;
+        padding: .5px;
+        margin: 4px 4px;
+    }
+
+    .beauty-text p{
+        line-height: 2;
+        padding-inline: 5px;
+        right: 0;
+        padding-left: 30px;
+    }
+
+    .intro h1{
+        padding-top: 1.5rem;
+    }
+
+    #hotel > .gap{
+        height: 100px;
+    }
+
+    #sim{
+        width: 150px;
+    }
+    .img img{
+        height: auto;
+        width: 250px;
+    }
+
+    ol li{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
