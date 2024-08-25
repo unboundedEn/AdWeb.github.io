@@ -15,7 +15,7 @@ html, body {
     /*background: radial-gradient(goldenrod,rgb(94, 74, 25),rgb(23, 22, 14));*/
     height: 95px;
     padding-left: 50px;
-    padding-top: 50px;
+    padding-top: 15px;
     font-size: large;
     z-index: 1000;
 }
